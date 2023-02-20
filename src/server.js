@@ -13,6 +13,12 @@ app.get('/message/:id/:user', (request, response) => {
   Para o usuário: ${user}`)
 })
 
+app.get('/users', (request, response) => {
+  const { page, limit } = request.query
+
+  response.send(`Página: ${page}. Mostrar: ${limit}`)
+})
+
 // Define o valor de PORT como 3333
 const PORT = 3333
 
