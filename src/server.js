@@ -13,6 +13,7 @@ app.get('/message/:id/:user', (request, response) => {
   Para o usuário: ${user}`)
 })
 
+// Criada a rota que usa o Query Params.
 app.get('/users', (request, response) => {
   const { page, limit } = request.query
 
